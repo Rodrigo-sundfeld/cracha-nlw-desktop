@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR" class="js-focus-visible" data-js-focus-visible>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo Sundfeld - DoWhile 2021</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      style="
+        transform: perspective(1000px) rotate(0deg) rotate(0deg)
+          scale3d(1, 1, 1);
+        will-change: transform;
+      "
+    >
+      <div class="rope"></div>
+      <div class="clasp"></div>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img class="spinning" src="images/selo.svg" alt="Selo RocketSeat" />
+          </span>
+
+          <img id="userPhoto" src="" alt="Foto pessoal Rodrigo Sundfeld" />
+        </div>
+
+        <h1 id="userName"></h1>
+        <a
+          id="userLink"
+          href="https://github.com/Rodrigo-sundfeld"
+          target="_blank"
+        >
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin"></span
+        ></a>
+        <p id="userBio"></p>
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="" target="_blank">
+              <img
+                class="youtube-img social-btn"
+                src="images/youtube.svg"
+                alt="ícone Youtube"
+              />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="" target="_blank">
+              <img
+                class="facebook-img social-btn"
+                src="images/facebook.svg"
+                alt="ícone Facebook"
+              />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="" target="_blank">
+              <img
+                class="instagram-img social-btn"
+                src="images/instagram.svg"
+                alt="ícone Instagram"
+              />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="" target="_blank">
+              <img
+                class="twitter-img social-btn"
+                src="images/twitter.svg"
+                alt="ícone Twitter"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('main'), {
+        max: 7,
+        speed: 300
+      })
+    </script>
+  </body>
+</html>
